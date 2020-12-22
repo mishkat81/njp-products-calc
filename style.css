@@ -146,7 +146,7 @@ Footer section start
 
 @media screen and (max-width: 991px){
     #outp1, #outp2, #outp3{
-        width: 100%;
+        width: 30%;
     }
     #main-content{
         margin-top: 308px;
