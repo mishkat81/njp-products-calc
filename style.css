@@ -149,13 +149,13 @@ Footer section start
         width: 30%;
     }
     #main-content{
-        margin-top: 308px;
+        margin-top: 215px;
     }
 }
 
 @media screen and (max-width: 767px){
     #main-content{
-        margin-top: 345px;
+        margin-top: 250px;
     }
 }
 
@@ -166,14 +166,14 @@ Footer section start
         font-size: 25px !important;
     }
     #main-content{
-        margin-top: 300px;
+        margin-top: 215px;
     }
     
 }
 
 @media screen and (max-width: 488px){
     #main-content{
-        margin-top: 330px;
+        margin-top: 240px;
     }
     #main-content h4{
         font-size: 17px;
@@ -182,7 +182,7 @@ Footer section start
 }
 @media screen and (max-width: 280px){
     #main-content{
-        margin-top: 360px;
+        margin-top: 265px;
     }
 }
 
