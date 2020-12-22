@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricint table-4</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <header class="fixed-top">
+       <div class="container">
+          <div class="header-content">
+                <div id="header-top" class="text-center">
+                    <h2>Calculation of <b>NJP</b> products value</h2>
+                </div>
+                <div id="header-bottom" class="text-center">
+                <div class="h-b-content">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label for="">Total Value (TP): </label> <label id="outp1" for="">0</label>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="">Total Value (TP+Vat): </label> <label id="outp2" for="">0</label>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="">Total Value (MRP): </label> <label id="outp3" for="">0</label>
+                            </div>
+                        </div>
+                </div>
+                </div>
+          </div>
+       </div>
+       <hr>
+   </header>
+   
+   <section id="main-content">
+       <div class="container">
+           <h4 class="text-center mb-2">Enter the Box number on the Black Column</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <table>
+                            <tr> <td colspan="3">Doxiva 200 Tab <small>[100's]</small></td><td colspan="1"> <input id="d1"  type="number" placeholder=" Box" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Empa 10 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" id="d2" placeholder=" Box" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Empa 25 Tab <small>[10's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d3" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">EmpaMet Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d4" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Fixpro 200 Cap <small>[12's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d5" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Flexivan ER Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d6" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Irobest Tab <small>[60's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d7" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d8" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Lijenta M 500 Tab <small>[60's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d9" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Lijenta M 850 Tab <small>[32's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d10" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Losarva 50 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d11" onkeyup="calc();"> </td></tr>
+                            <tr> <td colspan="3">Metavas MR Tab <small>[60's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d12" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Montiva 10 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d13" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Niprolac Oral.Sol. <small>[100 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d14" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Nixon 1g IV <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d15" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Pandura 0.5 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d16" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Rablet 20 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d17" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Starcal D Tab <small>[60's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d18" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">V3N Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d19" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Visnil Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d20" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Xinarox CV 250 Tab <small>[12's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d21" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Xinarox CV 500 Tab <small>[8's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d22" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Altrip Tab <small>[10's]</small></td><td colspan="1"> <input type="number" placeholder=" Box" id="d23" onkeyup="calc();">> </td></tr>
+                            <tr> <td colspan="3">Azaltic 500 Tab <small>[12's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">D-Star 20000 IU Tab <small>[12's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">D-star 40000 IU Tab <small>[8's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Diacana Tab <small>[10's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Diazid Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Doxiva Sy <small>[100 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Doxiva 400 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Erdostin 300 Cap <small>[32's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Esotor 20 Cap <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Esotor 20 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Fenticona Vaginal Cream <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Fexten 120 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Fixpro PFS <small>[50 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Glucomin 500 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Glucomin 850 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta M 1000 Tab <small>[16's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lyrinex 50 Cap <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nimovo Tab <small>[40's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nipro Gold Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nipro Seas Sy <small>[100 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Omecron 20 Cap <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Revalon Tab <small>[10's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <table>
+                            <tr> <td colspan="3">Oxidrop Nasal Drops 0.05% <small>[10 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Oxidrop Nasal Drps 0.025% <small>[10 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Pansos 20 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Receca Cap <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Arcet Tab <small>[100's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Adarbi 40 Tab <small>[20's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Adarbi 80 Tab <small>[20's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Bisopress 2.5 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Bisopress 5 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Losarva Plus Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Losarva 25 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Carceva 75 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Bilfast 20 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Bactropen Ointment <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Cefracef 250 Cap <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Cefracef 500 Cap <small>[24's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Camphor Plus Cream <small>[15 gm]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Camphor Plus Cream <small>[25 gm]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Carceva Plus Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Xinarox 250 Tab <small>[12's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Xinarox 500 Tab <small>[6's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Xinarox 750 IM/IV <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Toralin Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Tamino Sus <small>[60 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Tamino Tab <small>[200's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Tamino ER Tab <small>[100's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Tamino Plus tab <small>[100's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Thixtra Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Toplevo 500 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Symbiotrin Oral gel <small>[15 gm]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Receca 10 GFS <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Receca 30 GFS <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Rupatid 10 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Rovator 5 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Rovator 10 Tab <small>[20's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Pandura 1 Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Pandura 2 Tab <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Prokinet Tab <small>[100's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nixon 2 g IV <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nitrogina SR Tab <small>[50's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Nixon 500 IM <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            
+                        </table>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <table>
+                            <tr> <td colspan="3">Niprolac Oral sol. <small>[200 ml]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Mevigut SR Cap <small>[30's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Meroxin 500 mg IV <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Meroxin 1 g IV <small>[1's]</small></td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <table>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                            <tr> <td colspan="3">Lijenta 5mg</td><td colspan="1"> <input type="number" placeholder=" Box"> </td></tr>
+                        </table>
+                    </div>
+                </div>
+       </div>
+   </section>
+   <footer>
+       <div id="footer-content" class="fixed-bottom text-center">
+           <p>All Right Reserved &copy;2020. Design and Developed by MA IT Solution</p>
+       </div>
+   </footer>
+  
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script>
+        function calc(){
+            let l5 = document.getElementById("e10").value;
+            document.getElementById("ll5").innerHTML = l5;
+        }
+    </script> -->
+</body>
+</html>

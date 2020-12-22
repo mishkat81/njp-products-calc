@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a,a:hover, a:active,a:focus{
+    text-decoration: none;
+    color: #000000;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: normal;
+}
+p{
+    margin: 0;
+    line-height: 24px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* =====================
+style start from here
+========================
+*/
+body{
+    background-color: rgb(255, 247, 0);
+    background-image: radial-gradient(circle, rgba(26, 6, 6, 0) 0%, rgba(14, 214, 81, 0.8) 100%);
+    background-attachment: fixed;
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table, td{
+    width: 100%;
+    padding: 0 3px;
+    /* height: 100%; */
+}
+td:last-child{
+    padding: 0;
+    background-color: #000;
+}
+input{
+    width: 70px;
+    background-color: rgb(6, 1, 12);
+    border: none;
+    color: white;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+
+/* =====================
+Header section start
+========================
+*/
+header{
+    margin-bottom: 30px;
+    /* display: block; */
+    background-color: rgb(255, 247, 0);
+    background-image: radial-gradient(circle, rgba(26, 6, 6, 0) 0%, rgba(14, 214, 81, 0.8) 100%);
+    background-attachment: fixed;
+}
+
+.header-content{
+    padding: 15px 0;
+}
+#header-top{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#header-top h2{
+    font-size: 30px;
+}
+#outp1, #outp2, #outp3{
+    width: 100px;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #000;
+}
+label{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+Main content section start
+========================
+*/
+
+#main-content{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* =====================
+Footer section start
+========================
+*/
+#footer-content{
+    padding: 10px 0;
+    border-top: 1px solid rgb(180, 150, 150);
+    background-color: rgb(255, 247, 0);
+    background-image: radial-gradient(circle, rgba(26, 6, 6, 0) 0%, rgba(14, 214, 81, 0.8) 100%);
+    background-attachment: fixed;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px){
+    #outp1, #outp2, #outp3{
+        width: 100%;
+    }
+    #main-content{
+        margin-top: 308px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #main-content{
+        margin-top: 345px;
+    }
+}
+
+
+
+@media screen and (max-width: 575px){
+    #header-top h2{
+        font-size: 25px !important;
+    }
+    #main-content{
+        margin-top: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 488px){
+    #main-content{
+        margin-top: 330px;
+    }
+    #main-content h4{
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 280px){
+    #main-content{
+        margin-top: 360px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    #main-content{
+        margin-top: 150px;
+    }
+}
+
+
+
+
+
+
